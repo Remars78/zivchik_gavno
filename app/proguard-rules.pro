@@ -1,0 +1,5 @@
+-keep class io.nekohasekai.libbox.** { *; }
+-keep class io.github.sagernet.singbox.** { *; }
+-keepattributes Signature,Exceptions,*Annotation*
+-dontwarn io.nekohasekai.libbox.**
+-dontwarn io.github.sagernet.singbox.**
