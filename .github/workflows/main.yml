@@ -20,6 +20,11 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
+      - name: Download libbox.aar
+        run: |
+          mkdir -p app/libs
+          curl -L https://github.com/SagerNet/sing-box/releases/download/v1.11.4/libbox-android-v1.11.4.aar -o app/libs/libbox.aar
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:

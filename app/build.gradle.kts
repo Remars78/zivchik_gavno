@@ -57,8 +57,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-    // sing-box core (libbox)
-    implementation("io.github.sagernet:sing-box:1.11.4")
+    // sing-box core (libbox) - downloaded in CI or placed in libs/
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
 
     // Hilt (DI)
     implementation(libs.hilt.android)
